@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.cimcitech.forkliftdispatch.BindCarActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="53.0dip"
+        android:background="#000000"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="65.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/zbtn_titlebar_default_selector"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/back"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/relsase_title_name_new"
+            style="@style/style_title"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="绑定叉车信息"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/title_search_ib"
+            android:layout_width="65.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/zbtn_titlebar_default_selector"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/back"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="30dip"
+        android:padding="10dip"
+        android:text="当前绑定的车辆信息："
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:text="所属公司："
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/department_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:text="2670110072"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:text="设备编号："
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/device_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:text="2670110072"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:text="叉车控制器编号："
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/hard_id_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:text="2670110072"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:text="叉车类型："
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/hd_type_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:text="2670110072"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:text="叉车类型编号："
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/hd_type_no_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:text="2670110072"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/check_bind"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="10dip"
+        android:background="@mipmap/login_button_bg"
+        android:text="重新绑定车辆" />
+</LinearLayout>

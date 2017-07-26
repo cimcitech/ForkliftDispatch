@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#262626"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="53.0dip"
+        android:background="#000000"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="65.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/zbtn_titlebar_default_selector"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/back"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/relsase_title_name_new"
+            style="@style/style_title"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="设置"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/title_search_ib"
+            android:layout_width="65.0dip"
+            android:layout_height="fill_parent"
+            android:background="@drawable/zbtn_titlebar_default_selector"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/back"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/layout_view_1"
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:layout_marginTop="10dip"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dip"
+                    android:padding="10dip"
+                    android:src="@mipmap/setting_icon_5" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:gravity="center_vertical"
+                    android:text="绑定叉车信息"
+                    android:textColor="#B4B4B4"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout_view_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dip"
+                    android:background="@color/colorPrimary">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dip"
+                        android:padding="10dip"
+                        android:src="@mipmap/setting_icon_4" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/imageView2"
+                        android:gravity="center_vertical"
+                        android:text="设置显示参数"
+                        android:textColor="#B4B4B4"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dip"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/imageView2"
+                        android:background="#262626" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_view_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dip"
+                    android:background="@color/colorPrimary">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dip"
+                        android:padding="10dip"
+                        android:src="@mipmap/setting_icon_3" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/imageView3"
+                        android:gravity="center_vertical"
+                        android:text="设置手势密码"
+                        android:textColor="#B4B4B4"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dip"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/imageView3"
+                        android:background="#262626" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_view_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dip"
+                    android:background="@color/colorPrimary">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dip"
+                        android:padding="10dip"
+                        android:src="@mipmap/setting_icon_2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/imageView4"
+                        android:gravity="center_vertical"
+                        android:text="设置请求频率"
+                        android:textColor="#B4B4B4"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_view_5"
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:layout_marginTop="10dip"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dip"
+                    android:padding="10dip"
+                    android:src="@mipmap/setting_icon_1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/imageView5"
+                    android:gravity="center_vertical"
+                    android:text="查看版本信息"
+                    android:textColor="#B4B4B4"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

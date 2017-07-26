@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip">
+
+        <ImageView
+            android:id="@+id/image_view_1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dip"
+            android:src="@mipmap/image_view_1_selected" />
+
+        <ImageView
+            android:id="@+id/image_view_2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dip"
+            android:src="@mipmap/image_view_2_selected" />
+
+        <ImageView
+            android:id="@+id/image_view_3"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dip"
+            android:src="@mipmap/image_view_3_selected" />
+
+        <ImageView
+            android:id="@+id/image_view_4"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dip"
+            android:src="@mipmap/image_view_4_selected" />
+
+        <ImageView
+            android:id="@+id/image_view_5"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dip"
+            android:src="@mipmap/image_view_5_selected" />
+
+        <ImageView
+            android:id="@+id/image_view_6"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dip"
+            android:src="@mipmap/image_view_6_selected" />
+
+        <ImageView
+            android:id="@+id/image_view_7"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dip"
+            android:src="@mipmap/image_view_7_selected" />
+
+        <ImageView
+            android:id="@+id/image_view_8"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dip"
+            android:src="@mipmap/image_view_8_selected" />
+
+        <ImageView
+            android:id="@+id/image_view_9"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dip"
+            android:src="@mipmap/image_view_9_selected" />
+
+        <ImageView
+            android:id="@+id/image_view_10"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dip"
+            android:src="@mipmap/image_view_10_selected" />
+
+        <ImageView
+            android:id="@+id/image_view_11"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dip"
+            android:src="@mipmap/image_view_11_selected" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="#262626"
+        android:padding="10dip" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/dashboard_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/speed_tv"
+                android:layout_gravity="center"
+                android:layout_marginTop="55dip"
+                android:text="km / h"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/speed_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="50sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/speed_tv"
+                android:layout_gravity="center"
+                android:text="车速"
+                android:textColor="@color/dimgray"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.cimcitech.forkliftdispatch.widget.MyGridView
+        android:id="@+id/carGrid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="20dip"
+        android:cacheColorHint="#00000000"
+        android:columnWidth="50dip"
+        android:numColumns="3" />
+</LinearLayout>

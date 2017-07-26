@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#262626"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/photo_iv"
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dip"
+            android:src="@mipmap/login_photo_icon" />
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/photo_iv"
+            android:paddingBottom="30dip"
+            android:text="张某某"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_tv"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/photo_iv"
+            android:gravity="top"
+            android:paddingTop="30dip"
+            android:text="工号："
+            android:textColor="@color/dimgray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_tv"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/number_tv"
+            android:gravity="top"
+            android:paddingTop="30dip"
+            android:text="12345678"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <com.cimcitech.forkliftdispatch.widget.DigitalClock
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/name_tv"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:gravity="top"
+            android:paddingTop="30dip"
+            android:text="12:45:00"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dip"
+        android:background="@color/colorPrimary">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:padding="15dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="叉车编号"
+                android:textColor="@color/dimgray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/device_no_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123345"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="，"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/hd_type_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电瓶车[斯柯达电控]"
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
